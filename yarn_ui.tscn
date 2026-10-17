@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://ds3l86toj5xup"]
+
+[ext_resource type="Script" uid="uid://cydq2t7a1jdrw" path="res://yarn_ui.gd" id="1_7mrfn"]
+
+[sub_resource type="SystemFont" id="SystemFont_g5smm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_80buk"]
+font = SubResource("SystemFont_g5smm")
+font_size = 24
+
+[sub_resource type="LabelSettings" id="LabelSettings_gye4u"]
+font_size = 36
+outline_size = 2
+outline_color = Color(1, 0.09411765, 1, 1)
+
+[node name="yarn_ui" type="Panel" unique_id=1030653584]
+offset_right = 192.0
+offset_bottom = 64.0
+script = ExtResource("1_7mrfn")
+
+[node name="yarn" type="Label" parent="." unique_id=1563135840]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 88.0
+offset_bottom = 56.0
+text = "YARN:"
+label_settings = SubResource("LabelSettings_80buk")
+
+[node name="yarnamt" type="Label" parent="." unique_id=1966990653]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 8.0
+offset_right = 192.0
+offset_bottom = 58.0
+text = "0"
+label_settings = SubResource("LabelSettings_gye4u")

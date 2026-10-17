@@ -1,2 +1,2 @@
 # Box Game
-A game where a cat has to make it out of multiple boxes
+A platformer game where a silly cat has to make it over stacks of boxes.

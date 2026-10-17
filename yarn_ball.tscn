@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://uovtc1kn30ex"]
+
+[ext_resource type="Script" uid="uid://dq51l2wakkkf3" path="res://yarn_ball.gd" id="1_dm1we"]
+[ext_resource type="Texture2D" uid="uid://uk2wuvcbpav2" path="res://haven jumpstart assets/yarnballtransparent.png" id="1_parhp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_80buk"]
+radius = 16.0
+
+[node name="yarn ball" type="Area2D" unique_id=381750867]
+collision_layer = 0
+script = ExtResource("1_dm1we")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1270880776]
+position = Vector2(88, 56)
+scale = Vector2(0.16101694, 0.16101694)
+texture = ExtResource("1_parhp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2124073362]
+position = Vector2(88, 56)
+shape = SubResource("CircleShape2D_80buk")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
